@@ -146,7 +146,8 @@ void centraliza() {
 	setpoint = analogRead(POT);
 
 	//volta ao centro caso chegue ao final do trilho
-	attachInterrupt(digitalPinToInterrupt(FCE), centraliza, RISING);	attachInterrupt(digitalPinToInterrupt(FCD), centraliza, RISING);
+	attachInterrupt(digitalPinToInterrupt(FCE), centraliza, RISING);
+	attachInterrupt(digitalPinToInterrupt(FCD), centraliza, RISING);
 }
 
 void loop() {
